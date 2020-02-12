@@ -1,0 +1,300 @@
+<html>
+<head>
+<title>
+EMPLOYEE DETAILS
+</title>
+
+<style>
+   #a1{
+   border-style :  double;
+   border-color : 066f3e;   
+   border-width : 10px;
+   margin-left : 500px;
+   //margin-top : 210px;
+   width : 310px;
+   
+   
+   background-color : c4eea2;
+   padding-top : 10px;
+   padding-bottom : 5px;
+   //border-radius : 15px;
+ 
+   }
+   #a2{
+   margin-left : 500px;
+   margin-top : 170px;
+   width : 333px;
+    background-color : c4eea2;
+    border-style :  double;
+   border-color : 066f3e;   
+   border-width : 10px;
+   text-align : center;
+   font-family : Algerian;
+   font-size : 20px;
+   font-weight : bold;
+   text-color : 066f3e;
+  // color : 042149;
+   color :066f3e;
+   //border-radius : 10px;
+   }
+
+   #t1{
+   
+  // background-color:4be6ee;
+   color : 066f3e;
+   }
+   #t2{   
+   color : 066f3e;
+   }
+   #t3{
+   color : 066f3e;
+   }
+   #t4{
+   color : 066f3e;
+   }
+   #t5{
+   color : 066f3e;
+   }
+   #t6{
+   color : 066f3e;
+   }
+   #text1{
+   border-style : solid;
+   border-color : 066f3e;
+   
+   }
+   #text2{
+   border-style : solid;
+   border-color : 066f3e;
+   padding-right:30px;
+   }
+   #text3{
+   border-style : solid;
+   border-color : 066f3e;
+   }
+   #text4{
+   border-style : solid;
+   border-color : 066f3e;
+   }
+    #text5{
+	padding-right:33px;
+	border-style : solid;
+   border-color : 066f3e;
+   
+    font-size : 10px;
+   padding-left:35px;
+   }
+   #text6{
+   border-style : solid;
+   border-color : 066f3e;
+   padding-bottom : 15px;
+   }
+   #text7{
+   border-style : solid;
+   //border-radius : 3px;
+   font-family : cooper black;
+   color : 08346e;
+   }
+   #td1{
+   
+   border-style : solid;
+   border-color : 066f3e;
+   }
+   #td2{
+   
+   border-style : solid;
+   border-color : 066f3e;
+   }
+   #td3{
+   
+   border-style : solid;
+   border-color : 066f3e;
+   }
+   #td4{
+   
+   border-style : solid;
+   border-color : 066f3e;
+   }
+   #td5{
+   
+   border-style : solid;
+   border-color : 066f3e;
+   }
+   #td6{
+   
+   border-style : solid;
+   border-color : 066f3e;
+   }
+</style>
+<script>
+function my()
+{
+ if(document.getElementById("text1").value == "")
+ {
+   document.getElementById("i1").innerHTML = "please enter the name!!";
+   document.getElementById("i1").style.color = "red";
+   return false;
+ }
+ else if(document.getElementById("text1").value != "")
+ {
+ document.getElementById("i1").innerHTML = "";
+   //document.getElementById("i1").style.color = "black";
+   return false;
+ }
+}
+function my1()
+{
+ if(document.getElementById("text2").value == "")
+ {
+   document.getElementById("i2").innerHTML = "please enter D.O.B";
+   document.getElementById("i2").style.color = "red";
+   return false;
+ }
+ else if(document.getElementById("text2").value != "")
+ {
+ document.getElementById("i2").innerHTML = "";
+   document.getElementById("i2").style.color = "black";
+   return false;
+ }
+}
+function my2()
+{
+var input = document.getElementById("text3").value;
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+ if(document.getElementById("text3").value == "")
+ {
+ document.getElementById("i3").innerHTML = "please enter email";
+   document.getElementById("i3").style.color = "red";
+   return false;
+ }
+ else if(!input.match(mailformat))
+ {
+   document.getElementById("i3").innerHTML = "please enter valid email";
+   document.getElementById("i3").style.color = "red";
+   return false;
+   }
+ else if(document.getElementById("text3").value != "")
+ {
+ document.getElementById("i3").innerHTML = "";
+   document.getElementById("i3").style.color = "black";
+   return false;
+ }
+}
+function my3()
+{
+ if(document.getElementById("text4").value == "")
+ {
+   document.getElementById("i4").innerHTML = "please enter password";
+   document.getElementById("i4").style.color = "red";
+   return false;
+ }
+ else if(document.getElementById("text4").value != "")
+ {
+ document.getElementById("i4").innerHTML = "";
+   document.getElementById("i4").style.color = "black";
+   return false;
+ }
+}
+function my4()
+{
+ if(document.getElementById("text5").value == "")
+ {
+   document.getElementById("i5").innerHTML = "please enter the address";
+   document.getElementById("i5").style.color = "red";
+   return false;
+ }
+ else if(document.getElementById("text5").value != "")
+ {
+ document.getElementById("i5").innerHTML = "";
+   document.getElementById("i5").style.color = "black";
+   return false;
+ }
+}
+function myfun2()
+{
+ var ph = /^\d{10}$/;
+ var phno = document.getElementById("text6").value;
+if(document.getElementById("text6").value == "")
+ {
+   document.getElementById("i6").innerHTML = "please enter phone number";
+   document.getElementById("i6").style.color = "red";
+   return false;
+ }else if(!phno.match(ph))
+ {
+    document.getElementById("i6").innerHTML = "please enter valid number";
+   document.getElementById("i6").style.color = "red";
+   return false;
+ } 
+ else if(document.getElementById("text1").value != "")
+   {
+   if(document.getElementById("text2").value !="")
+   {
+   if(document.getElementById("text3").value !="")
+   {
+   if(document.getElementById("text4").value !="")
+   {
+   if(document.getElementById("text5").value !="")
+   {
+   if(document.getElementById("text6").value !="")
+   {
+    alert ("form submitted");
+	}
+	}
+	}
+	}
+   }
+   }
+}
+</script>
+</head>
+<body bgcolor = c4eea2>
+
+<input id = "a2" type = "label" value = "VALIDATION FORM">
+<br></br>
+<div id = "a1">
+<form>
+<table>
+<tr>
+<td  bgcolor = "9cf37c" id = "td1"><b id = "t1">NAME</b></td>
+<td><input type = "text" id = "text1"  ></td>
+</tr>
+<tr>
+<td></td><td><p id = "i1"></p></td>
+</tr>
+<tr>
+<td bgcolor = "9cf37c" id = "td2"><b id = "t2" >D.O.B</b></td>
+<td><input type = "date" id = "text2" onclick = " return my()" value = "" ></td>
+</tr>
+<tr><td></td><td><p id = "i2"></p></td></tr>
+<tr>
+<td bgcolor = "9cf37c" id = "td3"><b id = "t3">E-MAIL ID</b></td>
+<td><input type = "textbox" id = "text3" onclick = " return my1()" ></td>
+</tr>
+<tr><td></td><td><p id = "i3"></p></td></tr>
+<tr>
+<td bgcolor = "9cf37c" id = "td4"><b id = "t4">PASSWORD</b></td>
+<td><input type = "password" id = "text4"  onclick = "return my2()" ></td>
+</tr>
+<tr><td></td><td><p id = "i4"></p></td></tr>
+<tr>
+<td bgcolor = "9cf37c" id = "td5"><b id = "t5">ADDRESS</b></td>
+<td><textarea  rows = "3" cols = "17" id = "text5" onclick = " return my3()"></textarea></td>
+</tr>
+<tr>
+<td></td><td><p id = "i5"></p></td></tr>
+<tr>
+<td bgcolor = "9cf37c" id = "td6"><b id = "t6">PHONE NUMBER</b></td>
+<td><input type = "textbox" id = "text6" onclick = " return my4()"></td>
+</tr>
+<tr><td></td><td><p id = "i6"></p></td></tr>
+<tr></tr>
+<tr>
+<td><button type = "submit" onclick = "return myfun2()" id = "text7" ><b>SUBMIT</b></button></td>
+</tr>
+</table>
+
+</form>
+</div>
+<b>NOTE:</b><p>click each textbox without filling the previous textbox for validation</p>
+</body>
+</html>
